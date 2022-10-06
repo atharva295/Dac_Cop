@@ -5,6 +5,9 @@ public class FdAccount extends Account {
 	private int amount;
 	private double roi ;
 	
+	public FdAccount() {
+		
+	}
 	public FdAccount(String name, long accNumber, int amount, int tenure,double roi) {
 		super.name = name ;
 		super.accNumber = accNumber ;
