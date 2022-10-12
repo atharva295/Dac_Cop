@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Account {
 	private int accountNo ;
 	private String accountName ;
-	private static double interest = 3.5 ;
+	private static double roi = 3.5 ;
 	private double balance  ;
 	private static double minBal ;
+	private double intrest = 0.0 ;
 	Scanner sc =new Scanner(System.in) ;
 
 	public Account() {
@@ -35,9 +36,9 @@ public class Account {
 	public void setAccountName(String accountName) { this.accountName =
 			accountName; }
 	
-	public static double getInterest() { return interest; }
+	public static double getInterest() { return roi; }
 
-	public static void setInterest(double interest) { Account.interest =
+	public static void setInterest(double interest) { Account.roi =
 			interest; }
 
 	public double getBalance() { return balance; }
@@ -47,12 +48,19 @@ public class Account {
 	public static double getMinBal() { return minBal; }
 	
 	public static void setMinBal(double minBal) { Account.minBal = minBal; }
+	public double intrestcal() {
+		intrest = balance*roi/100 ;
+		return intrest ;
+		
+	}
 
 	@Override
 	public String toString() {
 		return "\t\t\t********** \n  accountNo = " + accountNo + 
 				"\n accountName = " + accountName + 
-				"\n balance = 1" + balance + "\n \t\t\t************";
+				"\n balance = 1" + balance + "\n "
+						+ " intrest= " + intrest 
+						+ "\t\t\t************";
 	}
 
 }
