@@ -12,12 +12,25 @@ public class AccountListTester {
 		int choice = 0;
 		do {
 			System.out.println(
-					" 1. Create Account \n 2. Display All Account Details \n 3. Find Account by Account Number \n 4. Apply intrest on all accounts ans show \n 0. Exit ");
-			System.out.println("Enter yout Choice");
+					  " 1. Create Account \n"
+					+ " 2. Display All Account Details \n"
+					+ " 3. Find Account by Account Number \n "
+					+ " 4. Apply intrest on all accounts ans show \n"
+					+ " 5. Remove account"
+					+ " 6. Arrange accounts in accesnding order"
+					+ " 7. sort by balance "
+					+ " 0. Exit ");
+			System.out.println("Enter your Choice");
 			choice = sc.nextInt();
 			switch (choice) {
 			case 1: {
-				Account a = new Account();
+				System.out.println("Enter Account Name");
+				String accountName = sc.next() ;
+				System.out.println("Enter Account Number");
+				Integer accountNo = sc.nextInt() ; 
+				System.out.println("Enter initial Amount to be deposited");
+			    Double balance = sc.nextDouble();
+				Account a = new Account(accountNo,accountName,balance);
 				accList.add(a);
 				System.out.println("Account created Successfully");
 				System.out.println(a);
@@ -47,7 +60,8 @@ public class AccountListTester {
 						throw new NotFoundException("Account not found.....");
 					}
 				} catch (NotFoundException e) {
-					e.printStackTrace();
+					System.out.println(e.getMessage());
+					//e.printStackTrace();
 				}
 
 			}
@@ -61,9 +75,46 @@ public class AccountListTester {
 			}
 				break;
 			case 5: {
-
+				System.out.println("Enter Account Number you want to delete");
+				int ac = sc.nextInt();
+				boolean flag = false;
+				for (Account i : accList) {
+					if (i.getaccountno() == ac) {
+						accList.remove(i) ;
+						flag = true;
+						break;
+					}
+				}
+				if (!flag) {
+					 System.out.println("Account not found.....");
+				}
 			}
 				break;
+			case 6: {
+				Comparator<Account>compareac = new Comparator<Account>() {
+					
+					@Override
+					public int compare(Account o1, Account o2) {
+						
+						return o1.getaccountno().compareTo(o2.getaccountno());
+					}
+				};
+				Collections.sort(accList, compareac);
+			}
+				break;
+			case 7: {
+				Comparator<Account>comparebal = new Comparator<Account>() {
+					
+					@Override
+					public int compare(Account o1, Account o2) {
+						
+						return o1.getBalance().compareTo(o2.getBalance());
+					}
+				};
+				Collections.sort(accList, comparebal);
+			}
+				break;
+				
 			}
 		} while (choice != 0);
 		sc.close();
