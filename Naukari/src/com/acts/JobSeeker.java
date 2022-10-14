@@ -1,24 +1,29 @@
 package com.acts;
+import java.time.LocalDate;
 import java.util.*;
 public class JobSeeker {
+	private static int registrationID_Start = 101 ;
 	private int registrationID ;
 	private String name ;
 	private String email ;
 	private int adharNO ;
 	private String phoneno  ;
-	private int DOB ;
-	private int GradDate ;
+	private LocalDate DOB ;
+	private LocalDate GradDate ;
+	private int  password;
+	
 	//PARA CONSTRUCTOR
-	public JobSeeker(int registrationID, String name, String email, int adharNO, String phoneno, int dOB,
-			int gradDate) {
+	public JobSeeker( String name, String email, int adharNO, String phoneno, LocalDate dOB, int password,
+			LocalDate gradDate) {
 		super();
-		this.registrationID = registrationID;
+		this.registrationID = registrationID_Start++;
 		this.name = name;
 		this.email = email;
 		this.adharNO = adharNO;
 		this.phoneno = phoneno;
-		DOB = dOB;
-		GradDate = gradDate;
+		this.DOB = dOB;
+		this.GradDate = gradDate;
+		this.password = password ;
 	}
 	//default CONSTRUCTOR
 	public JobSeeker() {
@@ -29,9 +34,7 @@ public class JobSeeker {
 	public int getRegistrationID() {
 		return registrationID;
 	}
-	public void setRegistrationID(int registrationID) {
-		this.registrationID = registrationID;
-	}
+	
 	public String getName() {
 		return name;
 	}
@@ -56,16 +59,16 @@ public class JobSeeker {
 	public void setPhoneno(String phoneno) {
 		this.phoneno = phoneno;
 	}
-	public int getDOB() {
+	public LocalDate getDOB() {
 		return DOB;
 	}
-	public void setDOB(int dOB) {
-		DOB = dOB;
+	public void setDOB(LocalDate dOB) {
+		this.DOB = dOB;
 	}
-	public int getGradDate() {
+	public LocalDate getGradDate() {
 		return GradDate;
 	}
-	public void setGradDate(int gradDate) {
+	public void setGradDate(LocalDate gradDate) {
 		GradDate = gradDate;
 	}
 	
