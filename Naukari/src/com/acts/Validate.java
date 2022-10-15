@@ -1,5 +1,6 @@
 package com.acts;
 import java.time.LocalDate;
+import java.util.List;
 public class Validate {
 	public static LocalDate validateDOB(String dob){
 		LocalDate DOB = LocalDate.parse(dob);
@@ -11,11 +12,7 @@ public class Validate {
 
 		return null ;
 	}
-	public static boolean validateEmail(String email){
-
-
-		return false ;
-	}
+	
 	public static LocalDate validateGrad(String graddate){
 		LocalDate today = LocalDate.now() ;
 		LocalDate date = LocalDate.parse(graddate);//yyy-mm-dd
@@ -34,9 +31,20 @@ public class Validate {
 					return false ;
 				}
 			}
+			return true ;
 
 		}
 		return false ;
+	}
+	public static boolean validateEmail(String email, List<JobSeeker> jobList) {
+
+		for(JobSeeker i : jobList) {
+			if(i.getEmail().equals(email)) {
+				return true ;
+				
+			}
+		}
+		return false;
 	}
 
 }

@@ -1,5 +1,6 @@
 package com.acts;
 import java.time.LocalDate;
+
 import java.util.*;
 public class JobSeeker {
 	private static int registrationID_Start = 101 ;
@@ -11,6 +12,8 @@ public class JobSeeker {
 	private LocalDate DOB ;
 	private LocalDate GradDate ;
 	private int  password;
+	private Degree degree ;
+
 	
 	//PARA CONSTRUCTOR
 	public JobSeeker( String name, String email, int adharNO, String phoneno, LocalDate dOB, int password,
@@ -25,16 +28,26 @@ public class JobSeeker {
 		this.GradDate = gradDate;
 		this.password = password ;
 	}
+	@Override
+	public String toString() {
+		return "registrationID=" + registrationID 
+				+ " name=" + name 
+				+ " email=" + email 
+				+ " adharNO="+ adharNO 
+				+ " phoneno=" + phoneno 
+				+ " DOB=" + DOB 
+				+ " GradDate=" + GradDate ;
+	}
 	//default CONSTRUCTOR
 	public JobSeeker() {
 		super();
 	}
-	
+
 	// getters setters 
 	public int getRegistrationID() {
 		return registrationID;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
@@ -71,6 +84,16 @@ public class JobSeeker {
 	public void setGradDate(LocalDate gradDate) {
 		GradDate = gradDate;
 	}
-	
-	
+	public Degree getDegree() {
+		return degree;
+	}
+	public void setDegree(Degree degree) {
+		this.degree = degree;
+	}
+	public JobSeeker findByID(int id, List<JobSeeker> ll) {
+		
+		return null ;
+	}
+
+
 }
