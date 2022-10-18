@@ -1,6 +1,8 @@
 package com.acts.pet;
 
-public class Status {
-
+public enum Status {
+	placed,
+	inprocess ,
+	completed;
 	
 }

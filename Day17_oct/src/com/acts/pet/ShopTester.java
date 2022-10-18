@@ -11,7 +11,7 @@ public class ShopTester {
 		Scanner sc = new Scanner(System.in);
 		//List<Pet>
 		int  choice =0;
-		int menuoption=0;
+		int menuoption=1;
 		boolean isLogin = false ;
 		do {
 			System.out.println("*******MENU******* \n "
@@ -22,7 +22,8 @@ public class ShopTester {
 					+ "5. order a pet \n "
 					+ "6. Check order status by orderId \n "
 					+ "7. Update order status \n "
-					+ "8. Logout");
+					+ "8. Logout \n"
+					+ "0. Exit");
 
 			menuoption=sc.nextInt();
 			switch(menuoption) {
@@ -130,25 +131,54 @@ public class ShopTester {
 						if(q>p.getStock()) {
 							System.out.println("unavailable pet quantities");
 						}else {
+							Order o = new Order(pId, q);
+							Order.olist.add(o);
+							System.out.println(o);;
 							
 						}
-						
-						
-						
+
 					}else {
 						System.out.println("Enter valid Pet ID");
 					}
-					
+
 				} catch (AuthorizationExcep e) {
 					e.printStackTrace();
 				}
-				
+
 			}break;
 			case 6: {
-				
+				try {
+					if(isLogin==false) {
+						throw new AuthorizationExcep("You are not logged in please login first");
+					}
+					//System.out.println(Pet.plist);
+					System.out.println("Enter order ID");
+					int oid = sc.nextInt() ;
+					System.out.println(Order.checkStatus(oid));
+				} catch (AuthorizationExcep e) {
+					e.printStackTrace();
+				}
 			}break;
 			case 7:{
+				try {
+					if (choice== 1 && isLogin == true )
+					{
+						System.out.println("Enter order id you want to update");
+						int oid = sc.nextInt() ;
+						System.out.println("Enter status you want to change ");
+						Status s = Status.valueOf(sc.next()) ;
+						if(Order.updateStatus(oid, s)) {
+							System.out.println("Your Status has been updated");
+							break ;
+						}
+						System.out.println("You have entered wrong order ID");
+					}else {
+						throw new AuthenticationException("You are not authenticated");
+					}
 
+				} catch (AuthenticationException e) {
+					e.printStackTrace();
+				}
 			}break;
 			case 8:{
 				isLogin =false ;
@@ -156,13 +186,15 @@ public class ShopTester {
 			}
 
 
-		}while (choice!=0);
+		}while (menuoption!=0);
 
-
+System.out.println("THANK YOU VISIT AGAIN !!!!!");
 
 
 
 	}
+
+	
 }
 
 

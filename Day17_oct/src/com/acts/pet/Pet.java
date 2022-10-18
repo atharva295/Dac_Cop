@@ -18,12 +18,19 @@ public class Pet {
 		this.unitprice = unitprice;
 		this.stock = stock;
 	}
-	 public static Pet findByID(int pid) {
-		for(int i=0;i<plist.size();i++) {
-			if(plist.get(i).petId==pid) {
-				return plist.get(i) ;
+	public static Pet findByID(int pid) {
+		//		for(int i=0;i<plist.size();i++) {
+		//			if(plist.get(i).petId==pid) {
+		//				return plist.get(i) ;
+		//			}
+		for(Pet p: plist)
+		{
+			if(p.petId==pid) {
+				return p;
 			}
+
 		}
+
 		return null ;
 	}
 	public int getPetId() {
@@ -70,6 +77,6 @@ public class Pet {
 				"/n unitprice=" + unitprice
 				+ "/n stock=" + stock+"/n";
 	}
-	
+
 
 }
