@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="abbb2977-eb70-4ecb-a4b6-695ab6989c9c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/AuthorizationExcep.class" beforeDir="false" afterPath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/AuthorizationExcep.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/Pet.class" beforeDir="false" afterPath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/Pet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/ShopTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/ShopTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/Day17_oct/bin/com/acts/pet/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17_oct/src/com/acts/pet/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day17_oct/src/com/acts/pet/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17_oct/src/com/acts/pet/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day17_oct/src/com/acts/pet/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day17_oct/src/com/acts/pet/ShopTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Day17_oct/src/com/acts/pet/ShopTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Naukari/bin/com/acts/CourseComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Naukari/bin/com/acts/CourseComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Naukari/bin/com/acts/Degree.class" beforeDir="false" afterPath="$PROJECT_DIR$/Naukari/bin/com/acts/Degree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Naukari/bin/com/acts/DobComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Naukari/bin/com/acts/DobComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Naukari/bin/com/acts/EmailComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Naukari/bin/com/acts/EmailComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Naukari/bin/com/acts/GradComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Naukari/bin/com/acts/GradComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Naukari/bin/com/acts/JobSeeker.class" beforeDir="false" afterPath="$PROJECT_DIR$/Naukari/bin/com/acts/JobSeeker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Naukari/bin/com/acts/JobSeekerTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/Naukari/bin/com/acts/JobSeekerTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Naukari/bin/com/acts/Validate.class" beforeDir="false" afterPath="$PROJECT_DIR$/Naukari/bin/com/acts/Validate.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GH6m1mwWPNg7jte3hQEUUuDUNb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abbb2977-eb70-4ecb-a4b6-695ab6989c9c" name="Changes" comment="" />
+      <created>1666033323050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666033323050</updated>
+    </task>
+    <servers />
+  </component>
+</project>
