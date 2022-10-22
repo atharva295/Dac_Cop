@@ -29,7 +29,7 @@ public class ShopTester {
 			switch(menuoption) {
 			case 1: {
 				try {
-					System.out.println("ENTER YOUR IDENTITY\n 1. admin \n 2. customer");
+					System.out.println( );
 					choice =sc.nextInt();
 					System.out.println("enter login id and password");
 					String id = sc.next();
