@@ -1,0 +1,9 @@
+Q1. Exceptional handling for minimum balance in account hierarchy.......... done!!!!!!!!!
+
+Q2. Exceptional handling in vehicle for over speed.
+
+Q3. Multiple catch blocks and finally for arithmetic exceptions.
+
+Q4. Use of try with resource for scanner.
+
+Q5. Create grocery store application using menu driven program for add stock and purchase item.
